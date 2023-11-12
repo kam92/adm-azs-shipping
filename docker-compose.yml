@@ -1,0 +1,21 @@
+version: '3'
+services:
+  database:
+    image: mongo:latest
+    container_name: mongodb-docker
+    ports:
+      - "27017:27017"
+    volumes:
+      - .mongo_data/data:/data/db
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frete-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - database
