@@ -1,29 +1,51 @@
-CRUD Fretes
+# CRUD de Fretes
 
-API REST e MongoDB.
+Este projeto oferece uma API REST para realizar operações CRUD relacionadas a fretes, utilizando MongoDB como banco de dados. O ambiente de desenvolvimento é configurado com Docker e inclui uma interface SwaggerUI para testar os endpoints.
 
-Para subir o projeto:
+## Inicializando o Projeto
+
+Para iniciar o projeto, utilize o seguinte comando:
+
+```bash
 docker-compose up
 
-SwaggerUI com os endpoints disponíveis para teste:
-http://localhost:8080/swagger-ui/index.html
+## Endpoints
+Acesse a interface SwaggerUI para testar os endpoints em [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
 
-Collection para o Postman no arquivo FreteApp.postman_collection.json, basta importar.
+Importe a coleção do Postman para facilitar os testes. O arquivo `FreteApp.postman_collection.json` contém as configurações necessárias.
 
-Utilidade:
+## Atualizando o Código
 
-Para subir alterações no código:
+Ao realizar alterações no código, reconstrua e reinicie o projeto com o comando:
+
+```bash
 docker-compose up --build
 
-Para debugar na IDE pode subir apenas o banco no Docker e alterar o host no application.properties de 'database' para 'localhost'
-Para verificar o conteúdo do banco, pode conectar o MongoDB Compass em localhost:27017, database frete-app
+Para depurar na IDE, é possível subir apenas o banco no Docker e alterar o host no arquivo `application.properties` de 'database' para 'localhost'.
 
-Zerar o banco:
+## Banco de Dados MongoDB
+
+Conecte-se ao banco de dados MongoDB Compass em `localhost:27017` utilizando o nome de banco de dados `frete-app`.
+
+## Zerando o Banco e o Docker
+
+Para zerar o banco de dados, remova o diretório `.mongo_data`:
+
+```bash
 sudo rm -r seu_path/frete/.mongo_data
 
-Zerar o docker:
+Para zerar o Docker, utilize o seguinte comando:
+
+```bash
 docker system prune -a
 
-Pegar o IP da conexão do banco de dados do docker:
+## Obtendo o IP da Conexão do Banco de Dados no Docker
+
+Para obter o IP da conexão do banco de dados no Docker, execute:
+
+```bash
 docker inspect mongodb-docker | grep "IPAddress"
+
+
+
 
