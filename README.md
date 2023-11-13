@@ -8,6 +8,7 @@ Para iniciar o projeto, utilize o seguinte comando:
 
 ```bash
 docker-compose up
+```
 
 ## Endpoints
 Acesse a interface SwaggerUI para testar os endpoints em [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html).
@@ -20,6 +21,7 @@ Ao realizar alterações no código, reconstrua e reinicie o projeto com o coman
 
 ```bash
 docker-compose up --build
+```
 
 Para depurar na IDE, é possível subir apenas o banco no Docker e alterar o host no arquivo `application.properties` de 'database' para 'localhost'.
 
@@ -33,11 +35,13 @@ Para zerar o banco de dados, remova o diretório `.mongo_data`:
 
 ```bash
 sudo rm -r seu_path/frete/.mongo_data
+```
 
 Para zerar o Docker, utilize o seguinte comando:
 
 ```bash
 docker system prune -a
+```
 
 ## Obtendo o IP da Conexão do Banco de Dados no Docker
 
@@ -45,6 +49,7 @@ Para obter o IP da conexão do banco de dados no Docker, execute:
 
 ```bash
 docker inspect mongodb-docker | grep "IPAddress"
+```
 
 
 
