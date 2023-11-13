@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "cd7d4bd7-0816-4fe5-816c-6d0ecbf8375f",
+		"name": "Frete-AzShipping-Kalil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31114135"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/frete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"propriedades\": {\n    \"asdasd\": \"Produto313\",\n    \"peso\": \"2.5\",\n    \"destino\": \"RJ\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/frete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"frete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/frete/Produto33/0/99",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/frete/Produto33/0/99",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"frete",
+						"Produto33",
+						"0",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/frete/655190c377479f6df484c71a",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"propriedades\": {\n    \"asdasd\": \"1111\",\n    \"nova prop\":\"123\",\n    \"peso\": \"2.5\",\n    \"destino\": \"RJ\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/frete/655190c377479f6df484c71a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"frete",
+						"655190c377479f6df484c71a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/frete/655190c377479f6df484c71a",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/frete/655190c377479f6df484c71a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"frete",
+						"655190c377479f6df484c71a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

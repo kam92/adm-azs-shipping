@@ -8,11 +8,12 @@ docker-compose up
 SwaggerUI com os endpoints disponíveis para teste:
 http://localhost:8080/swagger-ui/index.html
 
-Para subir alterações no código:
-docker-compose up --build
-
+Collection para o Postman no arquivo FreteApp.postman_collection.json, basta importar.
 
 Utilidade:
+
+Para subir alterações no código:
+docker-compose up --build
 
 Para debugar na IDE pode subir apenas o banco no Docker e alterar o host no application.properties de 'database' para 'localhost'
 Para verificar o conteúdo do banco, pode conectar o MongoDB Compass em localhost:27017, database frete-app
