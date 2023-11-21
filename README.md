@@ -2,6 +2,8 @@
 
 Este projeto oferece uma API REST para realizar operações CRUD relacionadas a fretes, utilizando MongoDB como banco de dados. O ambiente de desenvolvimento é configurado com Docker e inclui uma interface SwaggerUI para testar os endpoints.
 
+Cada frete tem suas propriedades que podem ser diferentes (A classe que representa um objeto Frete possui um mapper dinâmico).
+
 ## Inicializando o Projeto
 
 Para iniciar o projeto, utilize o seguinte comando:
